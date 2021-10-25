@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{.Title}}</title>
+
+    <script src="/assets/main.min.js"></script>
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+  </head>
+  <body>
+    <div id="map" data-lat="{{.Lat}}" data-lng="{{.Lng}}" data-zoom="{{.Zoom}}"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv0maQ3wAF4bLAW8hdfS63_0cFaQFMMBQ&callback=initMap&v=weekly" async></script>
+  </body>
+</html>

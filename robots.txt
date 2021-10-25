@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://videosonmap.com/sitemap.txt
