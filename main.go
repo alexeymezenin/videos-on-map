@@ -13,7 +13,7 @@ import (
 )
 
 const IndexLat = "52"
-const IndexLng = "21"
+const IndexLng = "13"
 const IndexZoom = 5
 const CityZoom = 15
 
