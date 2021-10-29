@@ -62,7 +62,7 @@ function putOneMarkerOnMap(video) {
 
   window.markers.push(marker)
 
-  addInfoWindowForMarker(marker, '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + video.youtube_id + '" frameborder="0" allow="autoplay;" allowFullScreen></iframe>');
+  addInfoWindowForMarker(marker, '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + video.youtube_id + '" frameborder="0" allow="autoplay;" allowFullScreen allowfullscreen></iframe>');
 }
 
 function addInfoWindowForMarker(marker, content) {
