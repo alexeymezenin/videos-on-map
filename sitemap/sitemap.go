@@ -9,8 +9,6 @@ import (
 	"github.com/joho/godotenv"
 )
 
-const StopId = 87
-
 type City struct {
 	Name string
 }
@@ -25,7 +23,7 @@ func main() {
 	db := connectToDb()
 	defer db.Close()
 
-	results, err := db.Query("SELECT name FROM cities WHERE id < ?", StopId)
+	results, err := db.Query("SELECT name FROM cities")
 
 	if err != nil {
 		panic(err.Error())
