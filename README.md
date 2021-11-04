@@ -1,1 +1,1 @@
-# videos-on-map
+Source code of the https://videosonmap.com project.
