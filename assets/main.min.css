@@ -1,1 +1,1 @@
-#map{height:100%}body,html{height:100%;margin:0;padding:0}.gm-style-iw>button{display:none!important}
+.map{height:100%;width:100%;position:fixed}body,html{height:100%;margin:0;padding:0}#top{padding-top:4px;text-align:center}#top-text{font-family:Verdana;position:relative;top:-7px;margin-right:10px}

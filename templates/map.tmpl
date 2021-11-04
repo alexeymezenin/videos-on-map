@@ -2,14 +2,21 @@
 <html>
   <head>
     <title>{{.Title}}</title>
-
-    <script src="/assets/main.min.js"></script>
-    <link rel="stylesheet" href="/assets/main.min.css">
-    <link rel="icon" type="image/png" href="/assets/favicon.png">
+      <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css"> 
+      <link rel="stylesheet" href="/assets/main.min.css">
+      <link rel="icon" type="image/png" href="/assets/favicon.png">
   </head>
   <body>
-    <div id="map" data-lat="{{.Lat}}" data-lng="{{.Lng}}" data-zoom="{{.Zoom}}"></div>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv0maQ3wAF4bLAW8hdfS63_0cFaQFMMBQ&callback=initMap&v=weekly" async></script>
+    <div id="top"><span id="top-text">If you like this project, please star it</span> <a class="github-button" href="https://github.com/alexeymezenin/videos-on-map" data-icon="octicon-star" data-show-count="true" data-size="large">Star</a></div>
+    <div id="map" class="map" data-lat="{{.Lat}}" data-lng="{{.Lng}}" data-zoom="{{.Zoom}}"></div>
+    
+    <div id="popup" class="ol-popup">
+      <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+      <div id="popup-content"></div>
+    </div>
+    
+    <script src="/assets/main.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>

@@ -1,8 +1,9 @@
-#map {
+.map {
     height: 100%;
+    width: 100%;
+    position: fixed;
 }
 
-/* Makes the sample page fill the window. */
 html,
 body {
     height: 100%;
@@ -10,7 +11,14 @@ body {
     padding: 0;
 }
 
-/* Remove X close button from Google Maps InfoWindow */
-.gm-style-iw > button {
-    display: none !important;
+#top {
+    padding-top: 4px;
+    text-align: center;
+}
+
+#top-text {
+    font-family: Verdana;
+    position: relative;
+    top: -7px;
+    margin-right: 10px;
 }
