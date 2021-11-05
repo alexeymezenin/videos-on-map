@@ -19,7 +19,7 @@ registerMapEvents();
 function createIconStyle() {
   return new ol.style.Style({
     image: new ol.style.Icon(({
-      scale: 0.8,
+      scale: 0.5,
       rotateWithView: false,
       anchor: [0.5, 1],
       anchorXUnits: 'fraction',
