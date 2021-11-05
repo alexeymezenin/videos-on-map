@@ -109,7 +109,7 @@ func getVideos(w http.ResponseWriter, r *http.Request) {
 	db := connectToDb()
 	defer db.Close()
 
-	results, err := db.Query("SELECT youtube_id, lat, lng FROM videos WHERE lat > ? AND lat < ? AND lng > ? AND lng < ? AND NOT hide = 1 ORDER BY rating DESC LIMIT 50", llat, rlat, llng, rlng)
+	results, err := db.Query("SELECT youtube_id, lat, lng FROM videos WHERE lat > ? AND lat < ? AND lng > ? AND lng < ? AND NOT hide = 1 ORDER BY rating DESC LIMIT 70", llat, rlat, llng, rlng)
 
 	if err != nil {
 		panic(err.Error())
