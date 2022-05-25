@@ -63,7 +63,7 @@ func connectToDb() *sql.DB {
 		panic(err.Error())
 	}
 
-	db, err := sql.Open("mysql", os.Getenv("DB_USER")+":"+os.Getenv("DB_PASSWORD")+"@tcp(127.0.0.1:3306)/youtube")
+	db, err := sql.Open("mysql", os.Getenv("DB_USER")+":"+os.Getenv("DB_PASSWORD")+"@tcp(127.0.0.1:3306)/"+os.Getenv("DB_DATABASE"))
 
 	if err != nil {
 		panic(err.Error())
