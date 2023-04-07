@@ -1,1 +1,1 @@
-Source code of the https://videosonmap.com project.
+Source code of a small pet project.
